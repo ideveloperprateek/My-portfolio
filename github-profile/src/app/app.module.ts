@@ -6,10 +6,18 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutMeComponent } from './pages/about-me/about-me.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, LoginComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+  declarations: [AppComponent, NavbarComponent, LoginComponent, AboutMeComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

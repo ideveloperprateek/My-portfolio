@@ -13,7 +13,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 12vh;
-  background-color: tomato;
+  background-color: #494949;
 }
 
 .logo {
@@ -36,7 +36,17 @@ nav {
 .nav-links a {
   text-decoration: none;
   color: beige;
-  letter-spacing: 1.5px;
   font-weight: 600;
   font-size: 18px;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: brown;
+  margin: 5px;
 }
