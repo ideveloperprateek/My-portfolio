@@ -1,3 +1,4 @@
+<
 <form [formGroup]="loginForm" class="login-form">
   <img [src]="logo" style="display: inline-block" />
   <h2 class="header">Login to your account</h2>
@@ -12,7 +13,7 @@
         placeholder="Email"
       />
     </div>
-    <div class="form-group">
+    <div class="form-group" style="position: relative; top: 10px">
       <label>Password</label>
       <input
         class="form-control"
@@ -21,7 +22,7 @@
         placeholder="Password"
       />
     </div>
-    <div class="mt-4">
+    <div class="mt-4" style="position: relative; top: 10px">
       <button
         class="btn btn-primary btn"
         type="submit"
@@ -30,7 +31,11 @@
       >
         {{ inLoginMode ? "Login" : "Signup" }}
       </button>
-      <button class="btn btn-primary btn" style="left: 50px">
+      <button
+        class="btn btn-primary btn"
+        style="left: 50px"
+        (click)="inLoginMode = !inLoginMode"
+      >
         {{ "Switch" }}
       </button>
     </div>
