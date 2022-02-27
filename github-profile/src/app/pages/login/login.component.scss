@@ -1,0 +1,27 @@
+body {
+  background: #009578;
+  margin: 15px;
+  margin-top: 50px;
+}
+
+.login-form {
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+  position: relative;
+  top: 20px;
+}
+
+.header {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333333;
+  position: relative;
+  left: 50px;
+  display: inline-block;
+}

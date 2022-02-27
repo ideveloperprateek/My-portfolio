@@ -1,1 +1,10 @@
-<h4>navbar works!</h4>
+<nav>
+  <div class="logo">
+    <h1>My PortFolio</h1>
+  </div>
+  <ul class="nav-links">
+    <li *ngFor="let item of routerConfig">
+      <a (click)="navigate(item.link)"> {{ item.text }} </a>
+    </li>
+  </ul>
+</nav>
