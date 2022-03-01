@@ -1,35 +1,30 @@
-body {
-  background: #009578;
-  margin: 15px;
-  margin-top: 50px;
-}
-
 .login-form {
-  max-width: 500px;
+  position: relative;
+  overflow: hidden;
+  top: 50px;
+  max-width: 450px;
   margin: 0 auto;
   border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 5px gray;
+}
+
+.header {
   position: relative;
-  top: 50px;
+  top: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header img {
+  flex-basis: 10%;
+}
+
+.header h2 {
+  flex-basis: 80%;
 }
 
 .btn {
   position: relative;
   top: 20px;
-}
-
-.header {
-  margin-bottom: 15px;
-  text-align: center;
-  color: #333333;
-  position: relative;
-  left: 50px;
-  display: inline-block;
-}
-
-.form-control {
-  max-width: 450px;
-  position: relative;
-  top: 5px;
 }

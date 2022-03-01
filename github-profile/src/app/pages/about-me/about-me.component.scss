@@ -1,58 +1,51 @@
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
 }
 
-* {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+#background {
+  background-image: url(../../../assets/background.jpg);
+  height: 100vh;
 }
 
-img {
-  width: 200px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 10px;
+#container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#woody {
-  background-color: dodgerblue;
-  margin-bottom: 10px;
+#img img {
+  border-radius: 20%;
 }
 
-#buzz {
-  background-color: tomato;
+.container-box {
+  width: 60vw;
 }
 
-h3 {
-  padding: 30px;
-  margin-bottom: 30px;
+.container-box h4 {
+  color: #fff;
+  text-indent: 50px;
+  text-align: justify;
 }
 
-div.myclass {
-  margin-top: 60px;
-  border: 5px solid palevioletred;
-  width: 800px;
-  height: 280px;
-}
-
-.box {
-  padding: 50px;
-  border-style: ridge;
-  border-color: blueviolet;
-  border-width: 5px;
-  display: inline-block;
-  border-radius: 6px;
-  background: skyblue;
-  margin-top: 50px;
-}
-
-.blog {
-  text-indent: 30px;
-  font-weight: 700;
+.section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   position: relative;
-  left: 15px;
+  top: 30px;
+  left: 35vw;
+  width: 50vw;
 }
 
-#img {
-  float: left;
-  height: 250px;
+.section .content {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section .content h4:hover {
+  transform: skew(5deg, 5deg);
+  font-size: 18px;
+  font-weight: 600;
 }

@@ -7,6 +7,7 @@ import { text } from './details.config';
   styleUrls: ['./about-me.component.scss'],
 })
 export class AboutMeComponent implements OnInit {
+  src = '../../../assets/developer.jpg';
   blogText = text.blogText;
 
   constructor() {}

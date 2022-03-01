@@ -1,0 +1,13 @@
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-areas: "n m p";
+}
+
+#sidebar {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  place-items: center;
+}

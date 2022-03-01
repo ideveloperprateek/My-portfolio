@@ -21,5 +21,20 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  private jsonPlaceholder() {
+    var http = new XMLHttpRequest();
+    http.onreadystatechange = function () {
+      if (http.readyState && http.status === 200) {
+        if (http.responseText) {
+          console.log(JSON.parse(http.responseText));
+        }
+      } else if (http.status != 200) {
+        console.log('error');
+      }
+    };
+    http.open('get', 'https://jsonplaceholder.typicode.com/posts');
+    http.send();
+  }
+
   submit() {}
 }

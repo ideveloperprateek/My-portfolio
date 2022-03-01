@@ -1,10 +1,38 @@
-<ng-content></ng-content>
-<div class="myclass">
-  <img src="../../assets/about-me.jpg" alt="Me" id="img" />
-  <h3>Hello, I am Prateek Vaidya</h3>
-  <h5 class="blog">
-    {{ blogText }}
-  </h5>
-</div>
+<div id="background">
+  <div style="display: flex; flex-direction: column">
+    <div id="container">
+      <div id="img">
+        <img height="250px" [src]="src" />
+      </div>
+      <div class="container-box">
+        <h2 style="color: #fff">Hi, I am Prateek</h2>
+        <h4>{{ blogText }}</h4>
+      </div>
+    </div>
 
-<ng-content></ng-content>
+    <div class="section">
+      <section>
+        <h4 style="color: #fff">My Interests:</h4>
+      </section>
+      <section class="content">
+        <h4>HTML</h4>
+      </section>
+      <section class="content">
+        <h4>CSS</h4>
+      </section>
+      <section class="content">
+        <h4>Javascript</h4>
+      </section>
+      <section class="content">
+        <h4>TypeScript</h4>
+      </section>
+
+      <section class="content">
+        <h4>Angular</h4>
+      </section>
+      <section class="content">
+        <h4>RxJs</h4>
+      </section>
+    </div>
+  </div>
+</div>

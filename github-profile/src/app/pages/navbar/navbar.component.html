@@ -1,16 +1,11 @@
-<nav>
-  <div class="logo">
-    <h1>My PortFolio</h1>
+<header>
+  <div id="logo">
+    <img src="../../../assets/my_portfolio.svg" />
+    <h1>My Portfolio</h1>
   </div>
-  <ul class="nav-links">
-    <li *ngFor="let item of routerConfig">
-      <a (click)="navigate(item.link)"> {{ item.text }} </a>
-    </li>
-  </ul>
-
-  <div class="burger">
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
-  </div>
-</nav>
+  <nav>
+    <a *ngFor="let item of routerConfig" (click)="navigate(item.link)">
+      {{ item.text }}
+    </a>
+  </nav>
+</header>
